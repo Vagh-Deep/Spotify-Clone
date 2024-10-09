@@ -1,0 +1,35 @@
+.flex{
+    display: flex;
+}
+.invert{
+    filter:invert();
+}
+.border_radius{
+    border-radius:4px;
+}
+ .invert_light{
+    
+    filter: invert(0.7);
+ }
+ .light_color{
+    color: #b3afaf;
+
+
+ }
+ .font-1{
+    font-size: 19px;
+font-weight: 600;
+ }
+ .padding-L{
+    padding-left:145px;
+ }
+ .margin-T{
+    margin-top: 5px;
+ }
+ .margin-T1{
+   margin-top:25px;
+ }
+.padding-T{
+   padding-top:15px;
+}
+ 

@@ -1,0 +1,577 @@
+*{margin:0;
+padding:0;
+scroll-behavior: smooth;
+
+}
+body{
+    background-color: black;
+    color:white;
+    overflow-x: hidden;
+}
+.flex{
+    display: flex;
+    
+}
+.left{
+    width:24vw;
+    position:sticky;
+    height:100vh;
+    top:0;
+    z-index: 1;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+    
+
+}
+.right{
+    width:75vw;
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+    
+    background-image: linear-gradient(#1c1c1c,#121212);
+    /* background-color: #1f1f1f; */
+   
+}
+.grey-bg{
+    background-color:hsl(0deg 0% 7.06%);
+}
+ #close{
+  display: none;
+  height:70%;
+
+ }
+ #close_mark{
+  height:4vh;
+  padding:0 0 10px 0;
+ }
+ #spotify_logo{
+  height:90%;
+ }
+
+.home ul li {
+   
+    width:30px;
+    display:flex;
+    list-style: none;
+gap:20px;
+font-size: 19px;
+font-weight: 600;
+/* justify-content:safe; */
+align-items: center;
+text-align: center;
+padding-top:15px;
+}
+
+.margin-1{
+    margin:5px;
+}
+.margin-2{
+    margin:20px;
+}
+.padding-1{
+    padding:20px;
+     
+}
+.library{
+    /* width:30px; */
+    height:25px;
+    gap: 10px;
+
+}
+.playlist{
+    height: 44.5vh;
+   
+    background-color: #1f1f1f;
+    overflow: scroll;
+    scrollbar-color: transparent transparent;
+    
+    
+}
+.size-1{
+    width:18px;
+}
+.footer{
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.footer-top{
+    flex-wrap: wrap;
+    gap:15px;
+    
+}
+.footer a{
+    color: #b3afaf;
+    list-style: none;
+    text-decoration: none;
+}
+.nav{
+   
+    width: 10vh;
+    gap:25px;
+}
+.login{
+    gap:25px;
+}
+
+
+ .header{
+    height:6.9vh;
+    /* width:7vw; */
+    background-color:#101010;
+    justify-content: space-between;
+    position:sticky;
+    z-index:1;
+    padding:10px 35px;
+    /* box-sizing: border-box; */
+    top:0;
+    
+ }
+ .nav button{
+    background-color: black;  
+    border:1px solid black;
+    border-radius: 70px;
+    padding:10px;
+ }
+ 
+ .header  img{
+    width:16px;
+ }
+
+ #hamburger  {
+  width:60px !important; 
+  padding-right: 20px;
+display: none;
+ }
+  #signup{
+    color:  #b3afaf;
+    background-color: transparent;
+    font-size:15px;
+    font-weight: 600;
+    border: none;
+  }
+
+  #signup:hover{
+
+    color:white;
+    font-size: 16px;
+  }
+  #log{
+    background-color:#ffffff; 
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    border:2px solid #101010;  
+    border-radius: 45px;
+    /* padding:12px 25px; */
+    height: 100%;
+ width: 110px;
+    box-sizing: border-box;
+     
+  }
+
+  #log:hover{
+    font-size: 16px;
+    border: 2px solid white;
+ 
+   
+
+  }
+
+  .spotifyPlaylist{
+    margin:30px 10px;
+  }
+  .spotifyPlaylist h1{
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .cardContainer{
+    /* margin:10px; */
+    width: 100%;
+     flex-wrap: wrap;
+     
+    padding:20px 20px 20px 20px;
+     justify-content: left;    
+     /* overflow-x: hidden; */
+     overflow-y: scroll;
+    
+  }
+  .playListCard{
+    width:200px;
+    height:250px;
+    padding:20px;
+    cursor:pointer;
+    /* flex-grow: 1.1; */
+    box-sizing: border-box;
+    
+
+     
+/* overflow: hidden; */
+  }
+  .playListCard img{
+    width:100%;
+    
+    object-fit: contain;
+     
+    border-radius: 5px;
+  }
+  .playListCard p{
+     height:40px;
+     width:100%;
+   
+  overflow: hidden;
+  text-overflow: ellipsis;
+   
+  white-space: nowrap;
+  overflow-wrap:normal;
+   
+  /* white-space: normal; */
+   
+  }
+   .playListCard:hover{
+    background-color: #333232;
+    transition: all 0.5s;
+    /* transform: scale(1.1); */
+  
+}
+.play {
+  position:relative;
+    
+   bottom:90px; 
+   left:105px; 
+   
+   /* display: none; */
+   opacity: 0;
+    transition: all  1s ;
+}
+/* .play:hover{
+  opacity:1;
+  bottom:100px;
+} */
+
+.play button{
+  background-color: transparent;
+  border:none;
+
+
+}
+.play img{
+  width: 50px;
+}
+@keyframes popUpPlay{
+  from {
+    
+  }
+}
+
+.playlist ul li{
+
+    
+   list-style: none;
+   padding: 15px;
+   width:100%;
+   box-sizing: border-box;
+}
+
+
+.playlist ul{
+  padding:0 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* height: 200%; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content:  space-around;
+   
+  /* overflow: scroll; */
+  
+  
+}
+.lib_card{
+   display: flex;
+   justify-content: space-between;
+   gap:10px;
+  border:2px solid black;
+ padding:  15px 20px;
+ border-radius:10px;
+ /* margin:10px 0; */
+  
+}  
+.lib_card img{
+  display: none;
+}
+.lib_card:hover{
+  transform: scale(1.08);
+}
+.playbar{display:flex;
+  justify-content: center;
+  position: fixed;
+  bottom: -15%;
+  flex-wrap: wrap;
+  width:72vw;
+  padding:5px 20px;
+   /*  */
+transition: bottom 1s ease-out;
+}
+
+.playbar_buttons{
+  display:flex;
+  justify-content:space-between;
+  margin:auto;
+  width:100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #242323;
+
+  gap:50px;
+  border-radius:20px;
+  
+}
+ .playbar img{
+  height:30px;
+ }
+ .seekbar  {
+   cursor: pointer;
+   height:3px;
+   width:100%;
+    
+   border-radius:5px;
+  background-color:rgb(58, 57, 57);
+  box-sizing: border-box;
+   margin:0px 15px;
+  margin-bottom: 10px;
+ }
+ #colored_bar{
+  background-color: white;
+  height: 100%;
+  width:0;
+ }
+ .circle{
+  background-color: white;
+  position:relative;
+top: -3.7px;
+
+
+  height:10px;
+  width:10px;
+  border-radius: 15px;
+   
+ }
+.btn{
+  width:20%;
+  justify-content: center;
+  gap:15px;
+}
+.info{
+  display: flex;
+  align-items: center;
+  width:40%;
+  box-sizing: border-box;
+  min-height: 35px;
+  font-size: 15px;
+}
+.time{
+  width:40%;
+  display: flex;
+  justify-content: space-between;
+  /* padding-right: 20px; */
+  padding:0 10px;
+  box-sizing: border-box;
+  align-items: center;
+
+}
+#sound_control{
+  width:60%;
+  align-items: center;
+  gap:5px;
+}
+
+#volume_container {
+  /* display: none; */
+  width: 80%;
+  background-color:rgb(127, 127, 105);;
+  height: 4px;
+  transition: width 1s ease;
+}
+ 
+ 
+
+  
+#volume_bar{
+  display:none;
+  width:80%;
+  background-color: black;
+height:4px;
+cursor:pointer;
+z-index: 1;
+
+}
+ #circle1{
+  position:relative;
+  /* left:5px; */
+  top:-3.5px;
+  width:10px;
+  height:10px;
+  border-radius: 25px;
+  background-color: white;
+  transition: left 1s ease ;
+  /* display: none; */
+
+ }
+
+@media (max-width:1472px) {
+
+  .right{
+    width:65vw;
+
+  }
+  .left{
+    width:34.5vw;
+  }
+
+  .playListCard{
+    width:250px;
+    height:300px;
+    padding:25px;
+   
+    
+    box-sizing: border-box;
+
+     
+/* overflow: hidden; */
+  }
+  .playListCard img{
+    width:100%;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  .cardContainer{
+    /* margin:10px; */
+    width: 100%;
+     flex-wrap: wrap;
+     overflow: hidden;
+    padding:20px 20px 20px 20px;
+     justify-content: space-around;    
+    
+  }
+  .play {
+    position:relative;
+     bottom:105px;
+     left:140px;
+  
+  }
+  
+  .play button{
+    background-color: transparent;
+    border:none;
+  
+  
+  }
+  .play img{
+    width: 50px;
+  }
+  .playbar{display:flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    flex-wrap: wrap;
+    width:62vw;
+    padding:5px 20px;
+     /*  */
+  
+  }
+
+  
+}
+@media (max-width:900px){
+   .left{
+    position: absolute;
+    left:-100%;
+    z-index: 2;
+width:70vw;
+    transition: left 1.5s ease-out;
+
+   }
+   .right{
+    width:100vw;
+
+   }
+.playbar{
+  width:95vw;
+}
+
+.nav{
+  gap:10px;
+}
+.nav button{
+  padding:5px;
+}
+.header img{
+  width: 15px;
+}
+.login{
+  gap:15px;
+  align-items: center;
+}
+#signup{
+  color:  #b3afaf;
+  background-color: transparent;
+  font-size:12px;
+  font-weight: 600;
+  border: none;
+}
+
+#signup:hover{
+
+  color:white;
+  font-size: 13px;
+}
+#log{
+  background-color:#ffffff; 
+  color:black;
+  font-size: 12px;
+  font-weight: 600;
+  border:2px solid #101010;  
+  border-radius: 45px;
+  /* padding:12px 25px; */
+  height: 75%;
+width: 80px;
+  box-sizing: border-box;
+   
+}
+
+#log:hover{
+  font-size: 13px;
+  border: 2px solid white;
+
+ 
+
+}
+.header{
+   padding:10px 20px;
+  
+}
+#hamburger  {
+   
+display:block;
+ }
+
+ #hamburger:hover{
+  transform: scale(1.2);
+ }
+#close{
+  display: block;
+}
+ #close_mark{
+  display: flex;
+  justify-content:space-between;
+ }
+ #close:hover{
+  transform: scale(1.05);
+ }
+}
